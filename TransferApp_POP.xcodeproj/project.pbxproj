@@ -9,23 +9,34 @@
 /* Begin PBXBuildFile section */
 		A139B2952B72638C00AFB93B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B2942B72638C00AFB93B /* AppDelegate.swift */; };
 		A139B2972B72638C00AFB93B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B2962B72638C00AFB93B /* SceneDelegate.swift */; };
-		A139B2992B72638C00AFB93B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B2982B72638C00AFB93B /* ViewController.swift */; };
-		A139B29C2B72638C00AFB93B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A139B29A2B72638C00AFB93B /* Main.storyboard */; };
 		A139B29F2B72638C00AFB93B /* TransferApp_POP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A139B29D2B72638C00AFB93B /* TransferApp_POP.xcdatamodeld */; };
 		A139B2A12B72638D00AFB93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A139B2A02B72638D00AFB93B /* Assets.xcassets */; };
 		A139B2A42B72638D00AFB93B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A139B2A22B72638D00AFB93B /* LaunchScreen.storyboard */; };
+		A139B2B12B72643B00AFB93B /* VisaToVisaTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B2B02B72643B00AFB93B /* VisaToVisaTransferVC.swift */; };
+		A139B2B42B72646600AFB93B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A139B2B32B72646600AFB93B /* SnapKit */; };
+		A139B2B62B72648100AFB93B /* ElcartTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B2B52B72648100AFB93B /* ElcartTransferVC.swift */; };
+		A139B2B82B72649D00AFB93B /* SwiftTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B2B72B72649D00AFB93B /* SwiftTransferVC.swift */; };
+		A139B2BA2B7264B700AFB93B /* TransferProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B2B92B7264B700AFB93B /* TransferProtocol.swift */; };
+		A139B2BC2B7264D300AFB93B /* ValidCardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B2BB2B7264D300AFB93B /* ValidCardProtocol.swift */; };
+		A139B2BE2B7264E900AFB93B /* CardListsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B2BD2B7264E900AFB93B /* CardListsVC.swift */; };
+		A139B2C02B72650800AFB93B /* SuccessPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139B2BF2B72650800AFB93B /* SuccessPageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A139B2912B72638C00AFB93B /* TransferApp_POP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferApp_POP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A139B2942B72638C00AFB93B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A139B2962B72638C00AFB93B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A139B2982B72638C00AFB93B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A139B29B2B72638C00AFB93B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A139B29E2B72638C00AFB93B /* TransferApp_POP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransferApp_POP.xcdatamodel; sourceTree = "<group>"; };
 		A139B2A02B72638D00AFB93B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A139B2A32B72638D00AFB93B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A139B2A52B72638D00AFB93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A139B2B02B72643B00AFB93B /* VisaToVisaTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisaToVisaTransferVC.swift; sourceTree = "<group>"; };
+		A139B2B52B72648100AFB93B /* ElcartTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElcartTransferVC.swift; sourceTree = "<group>"; };
+		A139B2B72B72649D00AFB93B /* SwiftTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTransferVC.swift; sourceTree = "<group>"; };
+		A139B2B92B7264B700AFB93B /* TransferProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferProtocol.swift; sourceTree = "<group>"; };
+		A139B2BB2B7264D300AFB93B /* ValidCardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidCardProtocol.swift; sourceTree = "<group>"; };
+		A139B2BD2B7264E900AFB93B /* CardListsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListsVC.swift; sourceTree = "<group>"; };
+		A139B2BF2B72650800AFB93B /* SuccessPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A139B2B42B72646600AFB93B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +70,61 @@
 		A139B2932B72638C00AFB93B /* TransferApp_POP */ = {
 			isa = PBXGroup;
 			children = (
-				A139B2942B72638C00AFB93B /* AppDelegate.swift */,
-				A139B2962B72638C00AFB93B /* SceneDelegate.swift */,
-				A139B2982B72638C00AFB93B /* ViewController.swift */,
-				A139B29A2B72638C00AFB93B /* Main.storyboard */,
-				A139B2A02B72638D00AFB93B /* Assets.xcassets */,
-				A139B2A22B72638D00AFB93B /* LaunchScreen.storyboard */,
+				A139B2AF2B72641A00AFB93B /* cardVC */,
+				A139B2AE2B72640C00AFB93B /* protocols */,
+				A139B2AD2B7263CD00AFB93B /* common */,
+				A139B2AC2B7263B600AFB93B /* recources */,
+				A139B2AB2B7263A100AFB93B /* delegate */,
 				A139B2A52B72638D00AFB93B /* Info.plist */,
 				A139B29D2B72638C00AFB93B /* TransferApp_POP.xcdatamodeld */,
 			);
 			path = TransferApp_POP;
+			sourceTree = "<group>";
+		};
+		A139B2AB2B7263A100AFB93B /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				A139B2962B72638C00AFB93B /* SceneDelegate.swift */,
+				A139B2942B72638C00AFB93B /* AppDelegate.swift */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		A139B2AC2B7263B600AFB93B /* recources */ = {
+			isa = PBXGroup;
+			children = (
+				A139B2A22B72638D00AFB93B /* LaunchScreen.storyboard */,
+				A139B2A02B72638D00AFB93B /* Assets.xcassets */,
+			);
+			path = recources;
+			sourceTree = "<group>";
+		};
+		A139B2AD2B7263CD00AFB93B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A139B2BD2B7264E900AFB93B /* CardListsVC.swift */,
+				A139B2BF2B72650800AFB93B /* SuccessPageVC.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		A139B2AE2B72640C00AFB93B /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A139B2B92B7264B700AFB93B /* TransferProtocol.swift */,
+				A139B2BB2B7264D300AFB93B /* ValidCardProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		A139B2AF2B72641A00AFB93B /* cardVC */ = {
+			isa = PBXGroup;
+			children = (
+				A139B2B02B72643B00AFB93B /* VisaToVisaTransferVC.swift */,
+				A139B2B52B72648100AFB93B /* ElcartTransferVC.swift */,
+				A139B2B72B72649D00AFB93B /* SwiftTransferVC.swift */,
+			);
+			path = cardVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +143,9 @@
 			dependencies = (
 			);
 			name = TransferApp_POP;
+			packageProductDependencies = (
+				A139B2B32B72646600AFB93B /* SnapKit */,
+			);
 			productName = TransferApp_POP;
 			productReference = A139B2912B72638C00AFB93B /* TransferApp_POP.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +174,9 @@
 				Base,
 			);
 			mainGroup = A139B2882B72638C00AFB93B;
+			packageReferences = (
+				A139B2B22B72646600AFB93B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = A139B2922B72638C00AFB93B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +193,6 @@
 			files = (
 				A139B2A42B72638D00AFB93B /* LaunchScreen.storyboard in Resources */,
 				A139B2A12B72638D00AFB93B /* Assets.xcassets in Resources */,
-				A139B29C2B72638C00AFB93B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +203,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A139B2BE2B7264E900AFB93B /* CardListsVC.swift in Sources */,
+				A139B2BA2B7264B700AFB93B /* TransferProtocol.swift in Sources */,
+				A139B2B12B72643B00AFB93B /* VisaToVisaTransferVC.swift in Sources */,
+				A139B2BC2B7264D300AFB93B /* ValidCardProtocol.swift in Sources */,
+				A139B2C02B72650800AFB93B /* SuccessPageVC.swift in Sources */,
 				A139B29F2B72638C00AFB93B /* TransferApp_POP.xcdatamodeld in Sources */,
-				A139B2992B72638C00AFB93B /* ViewController.swift in Sources */,
 				A139B2952B72638C00AFB93B /* AppDelegate.swift in Sources */,
+				A139B2B82B72649D00AFB93B /* SwiftTransferVC.swift in Sources */,
+				A139B2B62B72648100AFB93B /* ElcartTransferVC.swift in Sources */,
 				A139B2972B72638C00AFB93B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +219,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A139B29A2B72638C00AFB93B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A139B29B2B72638C00AFB93B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A139B2A22B72638D00AFB93B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +361,6 @@
 				INFOPLIST_FILE = TransferApp_POP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +388,6 @@
 				INFOPLIST_FILE = TransferApp_POP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A139B2B22B72646600AFB93B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A139B2B32B72646600AFB93B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A139B2B22B72646600AFB93B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A139B29D2B72638C00AFB93B /* TransferApp_POP.xcdatamodeld */ = {
