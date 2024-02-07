@@ -58,11 +58,22 @@ class VisaToVisaTransferVC: UIViewController, TransferProtocol, ValidCardProtoco
     
     private let senderBalanceLabel: UILabel = {
         let label = UILabel()
-        label.text = "Balance: $1000.00"
+        label.text = "Balance:"
         label.textColor = .blue
         label.font = .systemFont(ofSize: 14, weight: .medium)
         return label
     }()
+    
+    private lazy var itemBalance = 1000
+
+    private lazy var itemBalanceLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = UIColor.black
+        label.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        label.text = "$\(itemBalance)"
+        return label
+    }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +83,8 @@ class VisaToVisaTransferVC: UIViewController, TransferProtocol, ValidCardProtoco
     private func setupUI(){
         view.backgroundColor = .white
         setupSenderCardNumberLabel()
-        setupsenderBalanceLabel()
+        setupSenderBalanceLabel()
+        setupSenderBalance()
         
         setupRequsiteLabel()
         setupRequisiteTF()
@@ -89,11 +101,20 @@ class VisaToVisaTransferVC: UIViewController, TransferProtocol, ValidCardProtoco
         }
     }
     
-    private func setupsenderBalanceLabel(){
+    private func setupSenderBalanceLabel(){
         view.addSubview(senderBalanceLabel)
         senderBalanceLabel.snp.makeConstraints { make in
             make.top.equalTo(senderCardNumberLabel.snp.bottom).offset(10)
             make.leading.equalToSuperview().offset(20)
+        }
+    }
+    
+    private func setupSenderBalance(){
+        view.addSubview(itemBalanceLabel)
+        itemBalanceLabel.snp.makeConstraints { make in
+            make.top.equalTo(senderCardNumberLabel.snp.bottom).offset(10)
+            make.leading.equalTo(senderBalanceLabel.snp.trailing).offset(3)
+            make.centerY.equalTo(senderBalanceLabel.snp.centerY)
         }
     }
     
@@ -143,12 +164,12 @@ class VisaToVisaTransferVC: UIViewController, TransferProtocol, ValidCardProtoco
     
     @objc func validateAmount(_ sender: UIButton) {
         guard let amountText = amountTF.text, let amount = Float(amountText) else { return }
-       validate(amount: amount, tf: amountTF, label: amountLabel, balanceLabel: senderBalanceLabel)
+       validate(amount: amount, tf: amountTF, label: amountLabel, balanceLabel: itemBalanceLabel)
         
         let isCardNumberValid = validCardNumber(cardNumber: requisiteTF, cardNumberLabel: requisiteLabel)
 
         if isCardNumberValid {
-            if amount >= 20 {
+            if amount >= 20 && amount <= Float(itemBalance) {
                 let vc = SuccessPageVC()
                 navigationController?.pushViewController(vc, animated: true)
                 amountLabel.text = "Enter your amount below:"
@@ -160,7 +181,5 @@ class VisaToVisaTransferVC: UIViewController, TransferProtocol, ValidCardProtoco
         } else {
             validateButton.backgroundColor = .gray
         }
-
     }
-    
 }
